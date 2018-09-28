@@ -4,21 +4,35 @@
   padding: 0 40px 0 10px;
 }
 .div_nav {
-  display: flex;
-  justify-content: flex-end;
+  display: table-cell;
+  text-align: right;
+  vertical-align: middle;
 }
 .nav {
+  position: fixed;
+  top: 0;
+  right: 0;
   background-color: blue;
-  padding: 25px;
-  margin: 0;
-
+  display: table;
+  height: 8%;
+  width: 100%;
+  z-index: 100;
 }
-body {
+body,html {
+  height: 100%;
   margin: 0;
+}
+a {
+  color: black;
+  text-decoration: none;
 }
 .intro {
+  position: absolute;
+  top: 8%;
+  left: 0;
   padding: 40px 0;
-  height: 500px;
+  height: 80%;
+  width: 100%;
   background-color: purple;
 }
 .image_intro {
@@ -36,17 +50,4 @@ body {
   display:inline-block;
   float: right;
   margin-right:0.5%;
-}
-.photos {
-  display: -webkit-flex; /* Safari */
-  -webkit-align-items: center; /* Safari 7.0+ */
-  display: flex;
-  align-items: center;
-}
-.photo {
-  flex: 1;
-    padding: 3%;
-}
-.photo img {
-  width: 20em;
 }
