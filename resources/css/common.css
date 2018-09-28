@@ -14,7 +14,7 @@
   right: 0;
   background-color: blue;
   display: table;
-  height: 8%;
+  height: 55px;
   width: 100%;
   z-index: 100;
 }
@@ -28,7 +28,7 @@ a {
 }
 .intro {
   position: absolute;
-  top: 8%;
+  top: 55px;
   left: 0;
   padding: 40px 0;
   height: 80%;
@@ -37,17 +37,17 @@ a {
 }
 .image_intro {
   background-color: grey;
-  width: 49.3%;
+  width: 45%;
   height: 100%;
   display: inline-block;
   float: left;
-  margin-left: 0.5%;
+  margin-left: 5%;
 }
 .text_intro {
   background-color: grey;
-  width: 49.3%;
+  width: 40%;
   height: 100%;
   display:inline-block;
   float: right;
-  margin-right:0.5%;
+  margin-right:5%;
 }

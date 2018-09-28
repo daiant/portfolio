@@ -1,5 +1,7 @@
 
 .photos {
+  position: absolute;
+  top: 55px;
   margin-left: 5%;
   max-width: 90%;
   column-count: 5;
