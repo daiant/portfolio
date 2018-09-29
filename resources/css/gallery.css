@@ -16,3 +16,28 @@
 .photo img {
   width: 20em;
 }
+.intro {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  padding: 40px 0;
+  height: 80%;
+  width: 100%;
+  background-color: purple;
+}
+.image_intro {
+  background-color: grey;
+  width: 45%;
+  height: 100%;
+  display: inline-block;
+  float: left;
+  margin-left: 5%;
+}
+.text_intro {
+  background-color: grey;
+  width: 40%;
+  height: 100%;
+  display:inline-block;
+  float: right;
+  margin-right:5%;
+}
