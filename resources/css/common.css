@@ -1,60 +1,54 @@
-.li_nav {
-  font-size: 1.5em;
-  list-style: none;
-  display: inline-block;
-  padding: 0 40px 0 40px;
-}
-.div_nav {
-  display: table-cell;
-  vertical-align: middle;
-}
-.right {
-  text-align: right;
-  padding-right: 200px;
-}
-.left {
-  text-align: left;
-  padding-left: 200px;
-}
-.nav {
-  position: fixed;
-  top: 50%;
-  transform: translate(0, -50%);
-  background-color: #6d6d6d45;
-  display: table;
-  height: 55px;
-  width: 100%;
-  z-index: 100;
-}
-body,html {
-  height: 100%;
-  margin: 0;
-}
-a {
-  color: white;
-  text-decoration: none;
-}
 
-.background {
-  /* The image used */
-  background-image: url("../../img/DSC_0036.jpg");
-  filter: blur(4px);
-  border-radius: none;
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .logo {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  z-index: 101;
+text-align: center;
+margin-top: 120px;
 }
 .logo img {
-  height: 14em;
+  height: 7em;
+}
+.nav {
+margin-top: 50px;
+}
+.li_nav {
+  list-style: none;
+  font-size: 1.5em;
+  margin-left: 64px;
+  margin-top: 20px;
+}
+
+.container {
+  width: calc(100% - 240px);
+  position: relative;
+  display: table;
+  left: 240px;
+  height: 100%;
+}
+.showing_off {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 50px;
+  max-width: 100%;
+}
+.showing_off img {
+  max-width: 100%;
+  height: auto;
+}
+.menu {
+  position: fixed;
+  width: 240px;
+  height: 100%;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: "Simplifica", Fallback, sans-serif;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+@font-face {
+  font-family: 'Simplifica';
+  src: url('SIMPLIFICA.ttf') format('truetype');
 }
