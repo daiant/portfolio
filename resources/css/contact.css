@@ -1,0 +1,19 @@
+.content {
+	text-align: center;
+}
+.logo {
+  display: block;
+  text-indent: -9999px;
+  width: 32px;
+  height: 32px;	
+  background-size: 32px 32px;	
+}
+.instagram {
+	background: url("../svg/insta.svg");
+}
+.whatsapp {
+	background: url("../svg/whatsapp.svg");
+}
+.facebook {
+	background: url("../svg/facebook.svg");
+}
