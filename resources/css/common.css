@@ -1,10 +1,10 @@
 
 .logo {
 text-align: center;
-margin-top: 130px;
+margin-top: 60px;
 }
 .logo img {
-  height: 7em;
+  height: 8em;
 }
 .nav {
 margin-top: 50px;
@@ -31,7 +31,7 @@ margin-top: 50px;
   max-width: 100%;
 }
 .showing_off img {
-  max-width: 100%;
+  max-width: 75%;
   height: auto;
 }
 .menu {
