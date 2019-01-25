@@ -18,7 +18,7 @@ margin-top: 50px;
 
 .container {
   width: calc(100% - 240px);
-  position: relative;
+  position: fixed;
   display: table;
   left: 240px;
   height: 100%;
@@ -47,6 +47,33 @@ html, body {
 a {
   color: black;
   text-decoration: none;
+}
+.contacto {
+  -webkit-column-count: 4; /* Chrome, Safari, Opera */
+   -moz-column-count: 4; /* Firefox */
+   column-count: 4;
+   position: fixed;
+   bottom:30px;
+   left: 35px;
+}
+.contact_li {
+  background-repeat: no-repeat !important;
+  text-indent: -9999px;
+  display: inline-block;
+  width: 20px;
+  margin: 0 5px 20px 5px;
+}
+.instagram {
+	background: url("../svg/instagram.svg");
+}
+.behance {
+	background: url("../svg/behance.svg");
+}
+.facebook {
+	background: url("../svg/facebook.svg");
+}
+.linkedin {
+      background:  url("../svg/linkedin.svg")
 }
 @font-face {
   font-family: 'Simplifica';
