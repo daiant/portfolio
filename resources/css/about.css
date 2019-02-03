@@ -1,13 +1,7 @@
 .text {
-	margin-left: 150px;
-	margin-top:150px;
-	width: 500px;
+	margin-left: 100px;
+	margin-top:130px;
 	font-family: 'Titillium Web', sans-serif;
-}
-.container {
-	position: absolute;
-	top: 25px;
-	height: auto;
 }
 .content {
 	-webkit-column-count: 2; /* Chrome, Safari, Opera */
@@ -16,11 +10,13 @@
 	-webkit-column-gap: 50px; /* Chrome, Safari, Opera */
 	 -moz-column-gap: 50px; /* Firefox */
 	 column-gap: 50px;
-	 margin-top: 45px;
+	 margin-left: 240px;
+	 width: calc(100% - 240px);
+	 height: auto;
 }
 .portrait img{
-	height: 600px;
-	width: auto;
+	height: auto;
+	width: 70%;
 	margin-top: 80px;
 	margin-left: 50px;
 }
@@ -30,9 +26,17 @@
 	margin-top:100px;
 	position: absolute;
 }
+.link_title {
+	width: 250px;
+	margin-left: 240px;
+}
 .link {
-margin: 60px;
-position: relative;
-top: 150px;
-left:14%;
+	margin: 60px;
+	position: relative;
+	top: 150px;
+	left:14%;
+}
+.link img {
+	max-width: 100%;
+	height: auto;
 }
