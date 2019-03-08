@@ -38,17 +38,20 @@ margin-top: 50px;
   position: fixed;
   width: 240px;
   height: 100%;
+  background: #ffffff;
+  font-family: "Simplifica", Fallback, sans-serif;
 }
 html, body {
   height: 100%;
   margin: 0;
-  font-family: "Simplifica", Fallback, sans-serif;
+
 }
-a {
+.menu a, .contacto a {
   color: black;
   text-decoration: none;
 }
 .contacto {
+    font-family: "Simplifica", Fallback, sans-serif;
   -webkit-column-count: 4; /* Chrome, Safari, Opera */
    -moz-column-count: 4; /* Firefox */
    column-count: 4;
