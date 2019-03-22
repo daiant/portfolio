@@ -40,12 +40,14 @@ margin-top: 50px;
   height: 100%;
   background: #ffffff;
   font-family: "Simplifica", Fallback, sans-serif !important;
+  font-size: 11pt !important;
 }
 html, body {
   height: 100%;
   margin: 0;
   letter-spacing: 0.025em;
   line-height: 1.25 !important;
+  font-size: 11pt !important;
 }
 .menu a, .contacto a {
   color: black;
