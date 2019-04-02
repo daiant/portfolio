@@ -9,16 +9,39 @@
     <link rel="stylesheet" href="resources/css/common.css">
   </head>
   <body>
-
+    <div class="mobile_nav">
+      <div class="mobile_title">
+        <h2>DAIANT</h2>
+      </div>
+      <div class="options" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div class="mobile_menu">
+            <li class="mobile_li"><h2><a href="#">INICIO</a></h2></li>
+            <li class="mobile_li"><h2><a href="about.html">SOBRE MÍ</a></h2></li>
+            <li class="mobile_li"><h2><a href="gallery.html">GALERÍA</a></h2></li>
+            <li class="mobile_li"><h2><a href="contact.html">CONTACTO</a></h2></li>
+          </div>
+        </div>
+    </div>
     <div class="menu">
       <div class="logo">
         <img src="resources/img/watermark.png" alt="">
       </div>
+
       <div class="nav">
         <li class="li_nav"><a href="#">INICIO</a></li>
         <li class="li_nav"><a href="about.html">SOBRE MÍ</a></li>
         <li class="li_nav"><a href="gallery.html">GALERÍA</a></li>
         <li class="li_nav"><a href="contact.html">CONTACTO</a></li>
+      </div>
+      <div class="contacto">
+        <a class="contact_li instagram" target="_blank" href="https://www.instagram.com/_daiant">Instagram</a>
+        <a class="contact_li facebook" target="_blank"  href="https://www.instagram.com/_daiant">Facebook</a>
+        <a class="contact_li behance" target="_blank"  href="https://www.instagram.com/_daiant">Behance</a>
+        <a class="contact_li linkedin" target="_blank"  href="https://www.instagram.com/_daiant">Linkedin</a>
       </div>
 
     </div>
@@ -27,11 +50,13 @@
           <img src="img/fulls/INIT.jpg" alt="">
       </div>
     </div>
-    <div class="contacto">
-      <a class="contact_li instagram" target="_blank" href="https://www.instagram.com/_daiant">Instagram</a>
-      <a class="contact_li facebook" target="_blank"  href="https://www.instagram.com/_daiant">Facebook</a>
-      <a class="contact_li behance" target="_blank"  href="https://www.instagram.com/_daiant">Behance</a>
-      <a class="contact_li linkedin" target="_blank"  href="https://www.instagram.com/_daiant">Linkedin</a>
-    </div>
-  </body>
+  <script>
+function myFunction(x) {
+  x.classList.toggle("change");
+  var toggle = document.getElementsByClassName('mobile_menu');
+  toggle[0].classList.toggle("toggler");
+  var blurred = document.getElementsByClassName('showing_off');
+}
+</script>
+</body>
 </html>

@@ -2021,6 +2021,19 @@ input, select, textarea {
 		}
 
 /* Footer */
+@media screen and (max-width: 680px) {
+	body {
+		background: white;
+	}
+	#main {
+		width: 100%;
+		margin-left: 0;
+		position: inherit;
+	}
+	.mobile_nav {
+		font-family: "Simplifica", Fallback, sans-serif !important;
+	}
+}
 
 	#footer .copyright {
 		color: #505051;

@@ -1,5 +1,24 @@
-html,body {
+html, body {
   height: 100%;
+  margin: 0;
+  letter-spacing: 0.025em;
+  line-height: 1.25 !important;
+  font-size: 11pt !important;
+  font-family: "Simplifica", Fallback, sans-serif;
+}
+
+.menu {
+  font-family: "Simplifica", Fallback, sans-serif !important;
+  display: table;
+  position: absolute;
+  width: 240px;
+  height: 100%;
+  background: #ffffff;  font-size: 11pt !important;
+}
+
+.menu a, .contacto a {
+  color: black;
+  text-decoration: none;
 }
 .logo {
 text-align: center;
@@ -7,6 +26,78 @@ margin-top: 60px;
 }
 .logo img {
   height: 8em;
+}
+.mobile_nav {
+  width: 100%;
+  display: none;
+  position: relative;
+  top:0;
+  left: 0;
+  font-family: "Simplifica", Fallback, sans-serif !important;
+  margin: 0;
+}
+.mobile_title {
+   display: inline-block;
+   vertical-align: middle;
+   margin:0 12px;
+   font-size: 10pt;
+}
+.mobile_title h2 {
+  margin: 10px auto;
+}
+
+.mobile_menu {
+  text-align: center;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  transition: opacity 0.1s ease-out;
+  opacity: 0;
+  background: white;
+  z-index: 999;
+}
+.options {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  right: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.mobile_li {
+  list-style: none;
+  margin-top: 20px;
+  background: white;
+}
+.mobile_li a {
+  color: black;
+  text-decoration: none;
+}
+.bar1, .bar2, .bar3 {
+  width: 30px;
+  border-radius:10px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: 0.08s 0s ease-out;
+}
+
+
+.change .bar1 {
+  -webkit-transform:translateY(8px);
+  transform:translateY(8px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+.toggler {
+  opacity: 1;
+  height: auto;
 }
 .nav {
 margin-top: 50px;
@@ -18,6 +109,30 @@ margin-top: 50px;
   margin-top: 20px;
 }
 
+.contacto {
+   position: absolute;
+   bottom: 35px;
+   left: 56px;
+}
+.contact_li {
+  background-repeat: no-repeat !important;
+  text-indent: -9999px;
+  display: inline-block;
+  width: 20px;
+  margin:0 5px 20px 5px;
+}
+.instagram {
+	background: url("../svg/instagram.svg");
+}
+.behance {
+	background: url("../svg/behance.svg");
+}
+.facebook {
+	background: url("../svg/facebook.svg");
+}
+.linkedin {
+      background:  url("../svg/linkedin.svg")
+}
 .container {
   width: calc(100% - 240px);
   position: fixed;
@@ -36,53 +151,7 @@ margin-top: 50px;
   max-width: 75%;
   height: auto;
 }
-.menu {
-  position: fixed;
-  width: 240px;
-  height: 100%;
-  background: #ffffff;
-  font-family: "Simplifica", Fallback, sans-serif !important;
-  font-size: 11pt !important;
-}
-html, body {
-  height: 100%;
-  margin: 0;
-  letter-spacing: 0.025em;
-  line-height: 1.25 !important;
-  font-size: 11pt !important;
-}
-.menu a, .contacto a {
-  color: black;
-  text-decoration: none;
-}
-.contacto {
-    font-family: "Simplifica", Fallback, sans-serif !important;
-  -webkit-column-count: 4; /* Chrome, Safari, Opera */
-   -moz-column-count: 4; /* Firefox */
-   column-count: 4;
-   position: fixed;
-   bottom:30px;
-   left: 35px;
-}
-.contact_li {
-  background-repeat: no-repeat !important;
-  text-indent: -9999px;
-  display: inline-block;
-  width: 20px;
-  margin: 0 5px 20px 5px;
-}
-.instagram {
-	background: url("../svg/instagram.svg");
-}
-.behance {
-	background: url("../svg/behance.svg");
-}
-.facebook {
-	background: url("../svg/facebook.svg");
-}
-.linkedin {
-      background:  url("../svg/linkedin.svg")
-}
+
 @font-face {
   font-family: 'Simplifica';
   src: url('SIMPLIFICA.ttf') format('truetype');
@@ -97,3 +166,33 @@ html, body {
       body, input, select, textarea {
         font-size: 11pt;
       }
+@media screen and (max-width: 680px) {
+  .menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .mobile_nav {
+    display: block;
+  }
+  .showing_off {
+    padding: 5px;
+  }
+  .container {
+    left:0;
+    position: inherit;
+    width: 100%;
+    height: calc(100% - 45px);
+  }
+  .showing_off {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: -45px;
+  }
+  .showing_off img {
+    width: 100%;
+    max-width: 100%;
+  }
+}

@@ -3,7 +3,7 @@
 	width: 43%;
 	margin-left: 90px;
 	line-height: 1.35;
-	opacity: 0.97; 	
+	opacity: 0.97;
 	font-family: 'Open Sans', sans-serif;
 	margin-top:70px;
 }
@@ -22,6 +22,7 @@
 .portrait img{
 	height: auto;
 	width: 70%;
+	max-width: 100%;
 	margin-left: 50px;
 	display: inline-block;
 	vertical-align: middle;
@@ -30,4 +31,19 @@
 	float: right;
 	height: 100%;
 	width: 47%;
+}
+@media screen and (max-width: 680px) {
+	body {
+		/*background: red;*/
+	}
+	.content {
+		margin-left: 0;
+		width: 100%;
+		height: calc(100% - 45px);
+	}
+	.text {
+		margin: 2em 1em;
+		width: 90%;
+	}
+
 }
