@@ -85,3 +85,13 @@ html, body {
   font-family: 'Simplifica';
   src: url('SIMPLIFICA.ttf') format('truetype');
 }
+  @media screen and (max-width: 480px) {
+
+    html, body {
+      min-width: 320px;
+    }
+    @media screen and (max-width: 1680px) {
+
+      body, input, select, textarea {
+        font-size: 11pt;
+      }
