@@ -58,7 +58,7 @@ input[type=submit]:hover {
 }
 .form_container {
 	position: absolute;
-	min-height: 65%;
+
  border-radius: 2px;
  background-color: #f2f2f2;
  padding: 20px;
@@ -70,4 +70,31 @@ input[type=submit]:hover {
 
 .clearfix {
   clear: both;
+}
+@media screen and (max-width: 1000px) {
+	.container_contact {
+		width: 100%;
+		margin-left: 0;
+		position: inherit;
+		display: block;
+		height: calc(100% - 45px);
+	}
+	.intro {
+		display: block;
+		position: inherit;
+		width: 100%;
+		text-align: center;
+		margin: 60px auto;
+
+	}
+	.vl  {
+		border: none;
+	}
+	.form_container {
+		display: block;
+		position: inherit;
+		width: 70%;
+		margin: 40px auto;
+
+	}
 }
