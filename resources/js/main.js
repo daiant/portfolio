@@ -24,8 +24,8 @@
 			$body.addClass('ie');
 
 	// Touch?
-		if (browser.mobile)
-			$body.addClass('touch');
+	if (browser.mobile)
+		$body.addClass('touch');
 
 	// Transitions supported?
 		if (browser.canUse('transition')) {

@@ -12,7 +12,7 @@ html, body {
 .menu {
   font-family: "Simplifica", Fallback, sans-serif !important;
   display: table;
-  position: absolute;
+  position: fixed;
   width: 240px;
   height: 100%;
   background: #ffffff;  font-size: 11pt !important;
@@ -29,6 +29,16 @@ margin-top: 60px;
 .logo img {
   height: 8em;
 }
+.mobile_logo {
+  width: 32px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.mobile_logo img {
+  width: 32px;
+  height: auto;
+}
 .mobile_nav {
   width: 100%;
   display: none;
@@ -41,10 +51,11 @@ margin-top: 60px;
 .mobile_title {
    display: inline-block;
    vertical-align: middle;
-   margin:0 12px;
+   margin:0 5px;
 }
 .mobile_title h2 {
   margin: 10px auto;
+  letter-spacing: 0.15em;
 }
 
 .mobile_menu {
@@ -110,6 +121,7 @@ margin-top: 50px;
   font-size: 1.5em;
   margin-left: 64px;
   margin-top: 20px;
+  letter-spacing: 0.1em;
 }
 
 .contacto {
