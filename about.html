@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:350" rel="stylesheet">
     <link rel="stylesheet" href="resources/css/common.css">
     <link rel="stylesheet" href="resources/css/about.css">
-        <script src="resources/js/jquery.min.js"></script>
+    <script src="resources/js/jquery.min.js"></script>
 
   </head>
   <body>
@@ -31,7 +31,7 @@
             <li class="mobile_li"><h2><a href="contact.html">CONTACTO</a></h2></li>
           </div>
         </span>
-        
+
     <div class="menu">
       <div class="logo">
         <img src="resources/img/watermark.png" alt="">
@@ -51,10 +51,10 @@
     </div>
 
       <div class="content">
-        <div class="portrait">
-          <div class="caption">
-            <span class="border">HOLA</span>
-          </div>
+        <div class="portrait transition background">
+        </div>
+        <div class="caption opacity">
+          <span class="border opacity">HOLA</span>
         </div>
       <div class="text">
          <p>
@@ -62,11 +62,24 @@
 
           Neque lectus praesent class suspendisse placerat etiam feugiat in pellentesque eu pretium, nulla sodales laoreet vitae cras cursus leo suscipit convallis habitant cubilia, rhoncus phasellus netus ridiculus iaculis odio bibendum sed dis fames. Magnis nullam purus nisl mi aliquam inceptos enim metus, quisque feugiat diam curae potenti curabitur vulputate, facilisis natoque condimentum a et velit varius. Parturient convallis purus ligula torquent libero non in vehicula augue placerat, sagittis sociis nostra per morbi platea a ac fermentum mi mauris, interdum eget ante ad dis sem quam class dui.</p>
         </div>
+        <div class="photo2 background">
+
+        </div>
+        <div class="text">
+           <p>
+            Lorem ipsum dolor sit amet consectetur, adipiscing elit ligula tortor fringilla lectus, euismod enim aenean parturient. Consequat gravida quam nec lectus varius habitasse accumsan, porta tristique eleifend vestibulum cursus posuere, mauris nullam nulla tempus euismod in. Et aliquet tellus dapibus natoque massa posuere diam, himenaeos cubilia morbi justo fermentum erat.
+
+            Neque lectus praesent class suspendisse placerat etiam feugiat in pellentesque eu pretium, nulla sodales laoreet vitae cras cursus leo suscipit convallis habitant cubilia, rhoncus phasellus netus ridiculus iaculis odio bibendum sed dis fames. Magnis nullam purus nisl mi aliquam inceptos enim metus, quisque feugiat diam curae potenti curabitur vulputate, facilisis natoque condimentum a et velit varius. Parturient convallis purus ligula torquent libero non in vehicula augue placerat, sagittis sociis nostra per morbi platea a ac fermentum mi mauris, interdum eget ante ad dis sem quam class dui.</p>
+          </div>
       </div>
     </div>
       </div>
+      <script src="resources/js/jquery.min.js"></script>
       <script>
       var bool = false;
+      $(document).ready(function() {
+        document.getElementsByClassName('portrait')[0].classList.add('opacity');
+      },500);
       $(document).click(function(){
         var clickover = $(event.target).closest('span').attr('class');
         if(bool && !(clickover == "mobile_nav")) {
@@ -86,5 +99,6 @@
       }
 
       </script>
+
   </body>
 </html>
