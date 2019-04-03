@@ -47,6 +47,7 @@ margin-top: 60px;
   left: 0;
   font-family: "Simplifica", Fallback, sans-serif !important;
   margin: 0;
+  z-index: 9999;
 }
 .mobile_title {
    display: inline-block;
@@ -181,6 +182,8 @@ margin-top: 50px;
   }
   .mobile_nav {
     display: block;
+    position: fixed;
+    background: white;
   }
   .showing_off {
     padding: 5px;

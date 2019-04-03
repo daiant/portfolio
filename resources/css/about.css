@@ -46,5 +46,23 @@
 		margin: 2em 1em;
 		width: 90%;
 	}
+	.portrait {
+		height: 100%;
+		width: 100%;
+		/* background: red; */
+		/* margin-top: 30px; */
+		background-image: url("../../img/fulls/DSC_1521.jpg");
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.caption {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 100%;
+		text-align: center;
+	}
 
 }
