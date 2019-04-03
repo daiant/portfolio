@@ -33,7 +33,7 @@ margin-top: 60px;
   width: 32px;
   display: inline-block;
   vertical-align: middle;
-  margin-left: 5px;
+  margin-left: 8px;
 }
 .mobile_logo img {
   width: 32px;
@@ -42,6 +42,7 @@ margin-top: 60px;
 .mobile_nav {
   width: 100%;
   display: none;
+  height: 50px;
   position: relative;
   top:0;
   left: 0;
@@ -57,6 +58,10 @@ margin-top: 60px;
 .mobile_title h2 {
   margin: 10px auto;
   letter-spacing: 0.15em;
+}
+.mobile_title a {
+  text-decoration: none;
+  color: black;
 }
 
 .mobile_menu {
