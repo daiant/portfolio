@@ -138,28 +138,29 @@ margin-top: 50px;
 }
 .contact_li {
   background-repeat: no-repeat !important;
+  background-size: cover !important;
   text-indent: -9999px;
   display: inline-block;
   width: 20px;
+  height: 20px;
   margin:0 5px 20px 5px;
 }
 .instagram {
 	background: url("../svg/instagram.svg");
 }
 .behance {
-	background: url("../svg/behance.svg");
+	background: url("../svg/behance(1).svg");
 }
 .facebook {
 	background: url("../svg/facebook.svg");
 }
 .linkedin {
-      background:  url("../svg/linkedin.svg")
+  background:  url("../svg/linkedin.svg")
 }
 .container {
   width: calc(100% - 240px);
-  position: fixed;
   display: table;
-  left: 240px;
+  margin-left: 240px;
   height: 100%;
 }
 .showing_off {
@@ -173,10 +174,25 @@ margin-top: 50px;
   max-width: 75%;
   height: auto;
 }
+.mobile_separator {
+  border-top: 2px solid gray;
+  border-radius: 5px;
+  width: calc(90% - 240px);
+  opacity: 0.3;
+  margin: 80px 5% 40px calc(240px + 5%);
+}
 .mobile_footer {
-  display: none;
-  position: absolute;
-  bottom: 0;
+  margin-top: 40px;
+  width: 100%;
+}
+.mobile_copyright {
+  text-align: right;
+  opacity: 0.7;
+  margin: 40px 5%;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+
 }
 
 @font-face {
@@ -219,10 +235,11 @@ margin-top: 50px;
     position: inherit;
   }
   .mobile_separator {
-    border-top: 1px solid grey;
-    margin-bottom: 10px;
-    width: 60%;
-    margin: 0 auto 20px auto;
+    border-top: 2px solid gray;
+    border-radius: 5px;
+    width: 90%;
+    opacity: 0.3;
+    margin: 0 auto 40px auto;
   }
   .mobile_contacto {
     width: 100%;
@@ -230,14 +247,21 @@ margin-top: 50px;
   }
   .mobile_contact_li {
     background-repeat: no-repeat !important;
+    background-size: cover;
     text-indent: -9999px;
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     text-decoration: none;
+    margin: auto 6px 30px;
   }
   .mobile_copyright {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
     width: 100%;
     text-align: center;
+    margin-bottom: 40px;
+  	font-size: 9pt;
   }
 }

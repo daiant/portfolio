@@ -50,9 +50,7 @@ input[type=submit]:hover {
 .intro {
 	position: absolute;
   width: 32%;
-	height: 100px;
 	top: 7em;
-	padding: 0;
   left: 0;
   text-align: right;
 }
@@ -70,6 +68,9 @@ input[type=submit]:hover {
 
 .clearfix {
   clear: both;
+}
+.phone,.mail {
+	margin: 10px auto;
 }
 @media screen and (max-width: 1000px) {
 	.container_contact {
