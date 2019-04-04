@@ -52,25 +52,27 @@
 
       <div class="content">
         <div class="portrait transition background">
+          <div class="bg">
+
+          </div>
         </div>
         <div class="caption opacity">
           <span class="border opacity">HOLA</span>
         </div>
-      <div class="text">
+      <span class="text">
          <p>
           Lorem ipsum dolor sit amet consectetur, adipiscing elit ligula tortor fringilla lectus, euismod enim aenean parturient. Consequat gravida quam nec lectus varius habitasse accumsan, porta tristique eleifend vestibulum cursus posuere, mauris nullam nulla tempus euismod in. Et aliquet tellus dapibus natoque massa posuere diam, himenaeos cubilia morbi justo fermentum erat.
-
           Neque lectus praesent class suspendisse placerat etiam feugiat in pellentesque eu pretium, nulla sodales laoreet vitae cras cursus leo suscipit convallis habitant cubilia, rhoncus phasellus netus ridiculus iaculis odio bibendum sed dis fames. Magnis nullam purus nisl mi aliquam inceptos enim metus, quisque feugiat diam curae potenti curabitur vulputate, facilisis natoque condimentum a et velit varius. Parturient convallis purus ligula torquent libero non in vehicula augue placerat, sagittis sociis nostra per morbi platea a ac fermentum mi mauris, interdum eget ante ad dis sem quam class dui.</p>
-        </div>
+        </span>
         <div class="photo2 background">
 
         </div>
-        <div class="text">
+        <span class="text">
            <p>
             Lorem ipsum dolor sit amet consectetur, adipiscing elit ligula tortor fringilla lectus, euismod enim aenean parturient. Consequat gravida quam nec lectus varius habitasse accumsan, porta tristique eleifend vestibulum cursus posuere, mauris nullam nulla tempus euismod in. Et aliquet tellus dapibus natoque massa posuere diam, himenaeos cubilia morbi justo fermentum erat.
 
             Neque lectus praesent class suspendisse placerat etiam feugiat in pellentesque eu pretium, nulla sodales laoreet vitae cras cursus leo suscipit convallis habitant cubilia, rhoncus phasellus netus ridiculus iaculis odio bibendum sed dis fames. Magnis nullam purus nisl mi aliquam inceptos enim metus, quisque feugiat diam curae potenti curabitur vulputate, facilisis natoque condimentum a et velit varius. Parturient convallis purus ligula torquent libero non in vehicula augue placerat, sagittis sociis nostra per morbi platea a ac fermentum mi mauris, interdum eget ante ad dis sem quam class dui.</p>
-          </div>
+          </span>
       </div>
     </div>
       </div>
@@ -78,7 +80,8 @@
       <script>
       var bool = false;
       $(document).ready(function() {
-        document.getElementsByClassName('portrait')[0].classList.add('opacity');
+        var x = document.getElementsByClassName('portrait')[0].classList;
+        if($(window).width() < 1300) x.add('opacity');
       },500);
       $(document).click(function(){
         var clickover = $(event.target).closest('span').attr('class');
