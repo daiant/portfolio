@@ -15,6 +15,7 @@
 }
 .border {
 	height: 0;
+	position: relative;
 }
 .caption {
 	display: none;

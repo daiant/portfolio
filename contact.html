@@ -53,18 +53,25 @@
         <div class="phone margin"> +34 666 66 66 69</div>
         <div class="mail margin">hola@daiant.es</div>
       </div>
-      <div class="form_container">
-        <form class="form" action="action_page.php" method="post">
-          <label for="fname">Nombre</label>
-          <input type="text" id="fname" name="nombre" placeholder="Tu nombre completo">
-          <label for="femail">E-mail</label>
-          <input type="text" id="femail" name="email" placeholder="Tu correo electrónico">
-          <label for="subject">Mensaje</label>
-          <textarea id="subject" name="subject" placeholder="¡Hola!" style="height:200px"></textarea>
-
-          <input type="submit" value="Submit">
-
-        </form>
+      <div class="wrapper">
+    <form>
+      <div class="group">
+        <input type="text" required="required" /><span class="highlight"></span><span class="bar"></span>
+        <label>Name</label>
+      </div>
+      <div class="group">
+        <input type="text" required="required" /><span class="highlight"></span><span class="bar"></span>
+        <label>Email</label>
+      </div>
+      <div class="group">
+        <textarea type="textarea" rows="5" required="required"></textarea><span class="highlight"></span><span class="bar"></span>
+        <label>Message</label>
+      </div>
+      <div class="btn-box">
+        <button class="btn btn-submit" type="submit">submit</button>
+      </div>
+    </form>
+  </div>
       </div>
       <div class="clearfix"></div>
     </div>
