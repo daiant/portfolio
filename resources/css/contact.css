@@ -90,6 +90,7 @@ input[type=submit]:hover {
 	}
 	.vl  {
 		border: none;
+		padding: 0;
 	}
 	.form_container {
 		display: block;

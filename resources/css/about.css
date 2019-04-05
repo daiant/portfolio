@@ -58,6 +58,7 @@
 		margin-left: 0;
 		width: 100%;
 		height: calc(100% - 45px);
+		margin-top: 45px;
 	}
 	.text {
 		margin: 2em 1em;

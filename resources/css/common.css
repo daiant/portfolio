@@ -188,7 +188,7 @@ margin-top: 50px;
 .mobile_copyright {
   text-align: right;
   opacity: 0.7;
-  margin: 40px 5%;
+  margin: 10px 5% 40px;
   color: black;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -215,11 +215,11 @@ margin-top: 50px;
     padding: 0;
   }
   .container {
-    left:0;
     position: inherit;
     width: 100%;
     height: calc(100% - 45px);
     margin-top: 45px;
+    margin-left: 0;
   }
   .showing_off {
     margin: 0;
@@ -244,6 +244,7 @@ margin-top: 50px;
   .mobile_contacto {
     width: 100%;
     text-align: center;
+    display: block;
   }
   .mobile_contact_li {
     background-repeat: no-repeat !important;
@@ -259,9 +260,8 @@ margin-top: 50px;
     color: black;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    width: 100%;
     text-align: center;
-    margin-bottom: 40px;
   	font-size: 9pt;
+    display: block;
   }
 }
