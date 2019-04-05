@@ -4,7 +4,7 @@ function photo() {
 var res =  Math.floor(Math.random()*list.length);
 init = res;
 var img = document.createElement("img");
-img.src = "/images/fulls/"+res+".jpg";
+img.src = "images/fulls/"+res+".jpg";
 var src = document.getElementsByClassName('showing_off')[0];
 console.log(img.src);
 src.appendChild(img);
@@ -18,8 +18,7 @@ function change_photo() {
     div.innerHTML = '<img src="'+img.src+'" />';
     };
     var res = (init + 1) % list.length;
-    img.src = "/images/fulls/"+res+".jpg";
+    img.src = "images/fulls/"+res+".jpg";
     init = res;
-    div.style.opacity= "1";
   });
 }

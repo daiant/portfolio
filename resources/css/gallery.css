@@ -2000,7 +2000,7 @@ input, select, textarea {
 		}
 
 /* Footer */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 980px) {
 	body {
 		background: white;
 	}

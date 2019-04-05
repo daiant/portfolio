@@ -12,7 +12,11 @@ body {
 *, :before, :after {
   box-sizing: border-box;
 }
-
+.wrapper {
+	padding-top: 7em;
+	width: 70%;
+	float:right;
+}
 form {
   width: 70%;
   margin: 45px auto;
@@ -128,7 +132,7 @@ label {
 .intro {
 	position: absolute;
   width: 32%;
-	top: 7em;
+	top: 11em;
   left: 0;
   text-align: right;
 }
@@ -150,7 +154,7 @@ margin-bottom: 120px!important;
 .phone,.mail {
 	margin: 10px auto;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 980px) {
 	.container_contact {
 		width: 100%;
 		margin-left: 0;
@@ -158,6 +162,11 @@ margin-bottom: 120px!important;
 		display: block;
 		height: calc(100% - 45px);
 		margin-bottom: 150px;
+	}
+	.wrapper {
+		padding-top: 0;
+		width: 100%;
+		float:none;
 	}
 	.intro {
 		display: block;
