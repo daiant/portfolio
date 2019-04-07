@@ -49,9 +49,9 @@
           </div>
 
         </div>
-    <div class="container">
-      <div class="showing_off" onclick="change_photo()">
-          <script>photo();</script>
+    <div class="container" >
+      <div class="photo background">
+        <script>photo();</script>
       </div>
     </div>
     <footer class="mobile_footer">
@@ -65,6 +65,8 @@
       <span class="mobile_copyright">© 2019 Daiant - Gallery from HTML5UP</span>
     </footer>
     <script>
+    $(document).ready(function(){
+
     var bool = false;
     $(document).click(function(){
       var clickover = $(event.target).closest('span').attr('class');
@@ -82,7 +84,9 @@
     }
     function hola(x,y){
     document.getElementsByClassName(x)[0].classList.toggle(y);
-    }
+  }
+   $(document).on('click', '.container', function() { change_photo(); });
+  });
 
     </script>
 </body>

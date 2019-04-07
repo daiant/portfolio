@@ -5,20 +5,15 @@ var res =  Math.floor(Math.random()*list.length);
 init = res;
 var img = document.createElement("img");
 img.src = "images/fulls/"+res+".jpg";
-var src = document.getElementsByClassName('showing_off')[0];
-console.log(img.src);
-src.appendChild(img);
-src.style.opacity= "1";
+var src = document.getElementsByClassName('photo')[0];
+$(src).css("background-image", "url("+img.src+")");
 }
 function change_photo() {
-  $(document).ready(function() {
-    var img = new Image();
-    var div = document.getElementsByClassName('showing_off')[0];
-    img.onload = function() {
-    div.innerHTML = '<img src="'+img.src+'" />';
-    };
+    // var img = new Image();
+    var img = document.createElement("img");
+    var src = document.getElementsByClassName('photo')[0];
     var res = (init + 1) % list.length;
     img.src = "images/fulls/"+res+".jpg";
-    init = res;
-  });
+    $(src).css("background-image", "url("+img.src+")");
+    init=res; // update counter
 }
