@@ -1,17 +1,19 @@
 .text {
 	display: inline-block;
 	width: 90%;
-	margin: 0 auto;
 	line-height: 1.35;
 	opacity: 0.97;
 	font-family: 'Open Sans', sans-serif;
 	margin-top:70px;
 	letter-spacing: 0.025em;
+	text-align: center;
+	margin: 10px 0;
 }
 .content {
 	 margin-left: 240px;
 	 width: calc(100% - 240px);
 	 height: 100%;
+	 text-align: center;
 }
 .border {
 	height: 0;
@@ -42,16 +44,19 @@
 .portrait {
 	height: 100%;
 	width: 100%;
-	opacity: 0.75;
 	margin: 0 auto;
 	background-image: url("../../img/fulls/img_1.jpg");
 }
 .photo2 {
-	height: 100%;
-	width: 70%;
-	background-image: url("../../img/fulls/img_3.jpg");
+	height: 70%;
+	width: 100%;
+	background-image: url("../../images/fulls/3.jpg");
 }
-
+.photo3 {
+	height: 70%;
+	width: 100%;
+	background-image: url("../../images/fulls/7.jpg");
+}
 /*  VIEWPORT  */
 
 @media screen and (max-width: 980px) {
@@ -92,7 +97,7 @@
 		text-align: center;
 	}
 	.background {
-		-webkit-overflow-scrolling: touch;
+			background-attachment: scroll;
 	}
 
 }

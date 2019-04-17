@@ -127,7 +127,6 @@ label {
   width: calc(100% - 240px);
   margin-left: 240px;
 	position: relative;
-	height: 100%;
 }
 .intro {
 	position: absolute;
@@ -154,14 +153,24 @@ margin-bottom: 120px!important;
 .phone,.mail {
 	margin: 10px auto;
 }
+.put_everything_in_place {
+	position: relative;
+	min-height: 100%;
+	padding-bottom: 200px;
+}
+.mobile_footer {
+	position: absolute;
+	bottom: 0;
+}
 @media screen and (max-width: 980px) {
 	.container_contact {
 		width: 100%;
 		margin-left: 0;
-		position: inherit;
+		position: initial;
 		display: block;
-		height: calc(100% - 45px);
+		/* height: calc(100% - 45px); */
 		margin-bottom: 150px;
+
 	}
 	.wrapper {
 		padding-top: 0;

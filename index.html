@@ -49,9 +49,21 @@
           </div>
 
         </div>
+
     <div class="container" >
       <div class="photo background">
+        <div class="control left"></div>
+        <div class="control right"></div>
+        <img src="" class="photo_changer" >
         <script>photo();</script>
+
+        <div class="control_nav">
+          <group>
+          <span style="float:left;" class="btn_nav btn_left">previous</span>
+          <span>|||</span>
+          <span style="float:right;"class="btn_nav btn_right">next</span>
+        </div>
+      </group>
       </div>
     </div>
     <footer class="mobile_footer">
@@ -65,7 +77,6 @@
       <span class="mobile_copyright">© 2019 Daiant - Gallery from HTML5UP</span>
     </footer>
     <script>
-    $(document).ready(function(){
 
     var bool = false;
     $(document).click(function(){
@@ -85,8 +96,11 @@
     function hola(x,y){
     document.getElementsByClassName(x)[0].classList.toggle(y);
   }
-   $(document).on('click', '.container', function() { change_photo(); });
-  });
+   $(document).on('click', '.right', function() { increase_photo(); });
+   $(document).on('click', '.btn_right', function() { increase_photo(); });
+   $(document).on('click', '.left', function() { decrease_photo(); });
+   $(document).on('click', '.btn_left', function() { decrease_photo(); });
+   // $(document).on('click', '.photo_changer', function(){increase_photo(); });
 
     </script>
 </body>
