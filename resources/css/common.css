@@ -196,6 +196,9 @@ margin-top: 50px;
   opacity: 0.3;
   width: 7em;
   height: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+
 }
 .control:hover {
   opacity: 0.7;
@@ -232,10 +235,11 @@ margin-top: 50px;
   transform: translate(-50%,-50%);
   left: 50%;
   width: 80%;
-}
-.btn_nav {
   cursor: pointer;
-  webkit-touch-callout: none; /* iOS Safari */
+  font-size: 1.15em;
+}
+body{
+  -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
        -moz-user-select: none; /* Firefox */

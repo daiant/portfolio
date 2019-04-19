@@ -96,10 +96,7 @@
       <script src="resources/js/jquery.min.js"></script>
       <script>
       var bool = false;
-      $(document).ready(function() {
-        var x = document.getElementsByClassName('portrait')[0].classList;
-        if($(window).width() < 1300) x.add('opacity');
-      },500);
+
       $(document).click(function(){
         var clickover = $(event.target).closest('span').attr('class');
         if(bool && !(clickover == "mobile_nav")) {

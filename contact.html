@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="resources/css/common.css">
     <link rel="stylesheet" href="resources/css/contact.css">
         <script src="resources/js/jquery.min.js"></script>
+        <script src="resources/js/validate.js"></script>
   </head>
   <body>
     <span class="mobile_nav">
@@ -56,21 +57,21 @@
         <div class="mail margin">hola@daiant.es</div>
       </div>
       <div class="wrapper">
-    <form>
+    <form  action="mailer.php" id="form" method="post">
       <div class="group">
-        <input type="text" required="required" /><span class="highlight"></span><span class="bar"></span>
+        <input type="text" name="name" required="required" /><span class="highlight"></span><span class="bar"></span>
         <label>Name</label>
       </div>
       <div class="group">
-        <input type="text" required="required" /><span class="highlight"></span><span class="bar"></span>
+        <input type="text" id="email" name="email" required="required" /><span class="highlight"></span><span class="bar"></span>
         <label>Email</label>
       </div>
       <div class="group">
-        <textarea type="textarea" rows="5" required="required"></textarea><span class="highlight"></span><span class="bar"></span>
+        <textarea type="textarea" name="message" rows="5" required="required"></textarea><span class="highlight"></span><span class="bar"></span>
         <label>Message</label>
       </div>
       <div class="btn-box">
-        <button class="btn btn-submit" type="submit">submit</button>
+        <button class="btn btn-submit" type="submit" id="validate">submit</button>
       </div>
     </form>
   </div>

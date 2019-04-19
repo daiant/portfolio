@@ -18,9 +18,21 @@
 .border {
 	height: 0;
 	position: relative;
+	padding: 15px 60px;
+	letter-spacing: 0.2em;
+	border-radius: 2px;
+	font-size: 2.25em;
+	border: 2px solid white;
 }
 .caption {
-	display: none;
+	/* display: none; */
+	position: absolute;
+	display: block;
+	opacity: 1;
+	top: 50%;
+	transform: translateY(-50%);
+	width: calc(100% - 240px);
+	text-align: center;
 }
 .centerer {
 	display: inline-block;
@@ -46,6 +58,7 @@
 	width: 100%;
 	margin: 0 auto;
 	background-image: url("../../img/fulls/img_1.jpg");
+	opacity: 1!important;
 }
 .photo2 {
 	height: 70%;
