@@ -7,6 +7,7 @@ init = res;
 var src = document.getElementsByClassName('photo_changer')[0];
 // var img = document.createElement("img");
 src.src = "images/fulls/"+res+".jpg";
+$('#photolio').on('load', function(){$('#photolio').removeClass('hidden')});
 // $(src).css("background-image", "url("+img.src+")");
 }
 function decrease_photo() {

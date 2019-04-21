@@ -186,6 +186,11 @@ margin-top: 50px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: opacity 0.2s linear;
+}
+.hidden {
+  transition: opacity 0.2s linear;
+  opacity: 0;
 }
 .control {
   position: absolute;

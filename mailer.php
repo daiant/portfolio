@@ -6,7 +6,12 @@ $myemail = "hola@daiant.es";
 $name = check_input($_POST['name'], "Enter your name");
 $email = check_input($_POST['email']);
 $message = check_input($_POST['message']);
+$email_bot = check_input($_POST['bot']);
 
+// if bot, pues...
+if(strlen($email_bot) != 0) {
+  show_error("jaja eres un bot");
+}
 /* If e-mail is not valid show error message */
 if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/", $email))
 {

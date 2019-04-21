@@ -2,6 +2,9 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 }
+#email2 {
+	display: none;
+}
 .vl {
 	border-right: 1px solid black;
 	padding-right: 20px;
@@ -77,6 +80,13 @@ label {
   background: #2196f3;
   transition: 300ms ease all;
   left: 0%;
+}
+.red_input ~ label, .red_input:focus ~ label {
+	color: red !important;
+}
+.red_bar:before {
+	background: #ff0000 !important;
+	transition: 300ms ease all;
 }
 .btn {
   background: #fff;
