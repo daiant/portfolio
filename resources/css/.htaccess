@@ -2,3 +2,5 @@ RewriteEngine on
 RewriteCond %{HTTP_HOST} ^www\.daiant\.es [NC]
 RewriteCond %{HTTP_HOST} ^daiant.es/daiant.es/ [NC]
 RewriteRule ^(.*)$ http://daiant.es/$1 [L,R=301]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]

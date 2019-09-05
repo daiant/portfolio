@@ -2,6 +2,9 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 }
+#email2 {
+	display: none;
+}
 .vl {
 	border-right: 1px solid black;
 	padding-right: 20px;
@@ -78,6 +81,13 @@ label {
   transition: 300ms ease all;
   left: 0%;
 }
+.red_input ~ label, .red_input:focus ~ label {
+	color: red !important;
+}
+.red_bar:before {
+	background: #ff0000 !important;
+	transition: 300ms ease all;
+}
 .btn {
   background: #fff;
   color: #959595;
@@ -127,7 +137,6 @@ label {
   width: calc(100% - 240px);
   margin-left: 240px;
 	position: relative;
-	height: 100%;
 }
 .intro {
 	position: absolute;
@@ -154,14 +163,23 @@ margin-bottom: 120px!important;
 .phone,.mail {
 	margin: 10px auto;
 }
+.put_everything_in_place {
+	position: relative;
+	min-height: 100%;
+	padding-bottom: 200px;
+}
+.mobile_footer {
+	position: absolute;
+	bottom: 0;
+}
 @media screen and (max-width: 980px) {
 	.container_contact {
 		width: 100%;
 		margin-left: 0;
-		position: inherit;
 		display: block;
-		height: calc(100% - 45px);
+		/* height: calc(100% - 45px); */
 		margin-bottom: 150px;
+
 	}
 	.wrapper {
 		padding-top: 0;
