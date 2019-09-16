@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www.daiant.es$
+RewriteCond %{REQUEST_URI} !^
+RewriteRule ^(.*)$ http://daiant.es/ [L,R=301]
