@@ -11,6 +11,7 @@ body {
 }
 .title {
 	margin: 0;
+  font-family: "Simplifica", Fallback, sans-serif;
 }
 *, :before, :after {
   box-sizing: border-box;
